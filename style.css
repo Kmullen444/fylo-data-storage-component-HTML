@@ -1,7 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-html {
-  font-family: 'Raleway', sans-serif;
+:root {
+  font-size: 14px;
+
+  --prim-grad-400: hsl(6, 100%, 80%);
+  --prim-grad-800: hsl(335, 100%, 65%);
+
+  --neut-200: hsl(243, 100%, 93%);
+  --neut-400: hsl(0, 0%, 100%);
+  --neut-500: hsl(229, 7%, 55%);
+  --neut-600: hsl(228, 56%, 26%);
+  --neut-800: hsl(229, 57%, 11%);
+
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+}
+
+.main-container,
+.logo-container,
+.img-container,
+.data-container,
+.data-left,
+.data-links,
+.data,
+.split,
+.end-range
+{
+  display: flex;
+}
+
+.data-used,
+.data-range {
+  color: var(--neut-400);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.main-container,
+.data-container
+{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-container,
+.split 
+{
+  flex-direction: row;
+}
+
+.document-link, 
+.file-link,
+.upload-link
+{
+  background-color: var(--neut-800);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url('./images/bg-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  margin: auto;
+  margin-top: 10vh;
+  height: 70vh;
+  width: 40vh;
+}
+
+.data-links {
+  border-radius: .6rem 9rem .6rem .6rem;
+  background-color: var(--neut-600);
+  height: 33%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.logo-container {
+  margin: 12% 3rem 4%;
+}
+
+.img-container {
+  width: 70%;
+  margin: 8% 3rem 4%;
+}
+
+.document-link {
+  padding: 1rem 1.15rem;
+}
+
+.data-container {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  border-radius: .6rem;
+  background-color: var(--neut-600);
+  margin-top: 1.5rem;
+  z-index: 1;
+}
+
+.data-used {
+  position: relative;
+  top: 8%;
+  height: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+.split {
+  position: relative;
+  top: 5%;
+  width: 70%;
+}
+
+.end-range {
+  justify-content: flex-end;
+}
+
+.progress {
+  background-color: var(--neut-800);
+  top: -1%;
+  height: 10%;
+  width: 70%;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 1rem;
+}
+
+.inner-amount{
+  background-image: linear-gradient(to right, var(--prim-grad-400), var(--prim-grad-800));
+  display: flex;
+  justify-content: flex-end;
+  margin-top: .17rem;
+  border-radius: 1rem;
+  margin-left: .3rem;
+  height: 70%;
+  width: 13rem;
+  position: relative;
+  z-index: 2;
+
+}
+
+.white-dot {
+  background-color: var(--neut-400);
+  height: 80%;
+  margin-top: 1px;
+  margin-right: 3px;
+  border-radius: 10px;
+  width: .65rem;
+  position: relative;
+  z-index: 3;
+}
+
+.data-range {
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.data-left {
+  background-color: var(--neut-400);
+  justify-content: center;
+  align-items: center;
+  border-radius: .7rem;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  z-index: 2;
+  top: 20%;
+}
+
+.amount {
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+
+.gb-left {
+  font-size: .9rem;
+  font-weight: 700;
+  margin-left: .3rem;
+  padding: .3rem;
+  letter-spacing: 1px;
+  color: hsl(219, 6%, 46%);
+}
