@@ -143,6 +143,7 @@ html {
   position: relative;
   z-index: 1;
   margin-top: 1rem;
+  flex-shrink: 0;
 }
 
 .inner-amount{
@@ -183,7 +184,7 @@ html {
   width: 50%;
   height: 50%;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   top: 20%;
 }
 
@@ -243,21 +244,22 @@ html {
   .data-left {
     top: -80%;
     align-self: flex-end;
+    padding: 2rem;
     height: 60%;
-    width: 25%;
+    width: 30%;
     right: 4.5rem;
   }
   
   .tri {
     position: relative;
-    z-index: 3;
+    z-index: 2;
     height: 0px;
     width: 0px;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-right: 30px solid var(--neut-400);
-    right: 6.65rem;
-    top: -2rem;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid var(--neut-400);
+    right: 5.95rem;
+    top: -.6rem;
   }
 }
 
