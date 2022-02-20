@@ -26,7 +26,6 @@ html {
 }
 
 .main-container,
-.logo-container,
 .img-container,
 .data-container,
 .data-left,
@@ -73,12 +72,6 @@ html {
   border-radius: 10px;
 }
 
-body {
-  background-image: url('./images/bg-mobile.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .main-container {
   margin: auto;
   margin-top: 10vh;
@@ -90,7 +83,7 @@ body {
   border-radius: .6rem 9rem .6rem .6rem;
   background-color: var(--neut-600);
   height: 33%;
-  width: 100%;
+  width: 90%;
   flex-direction: column;
 }
 
@@ -109,7 +102,7 @@ body {
 
 .data-container {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 25%;
   border-radius: .6rem;
   background-color: var(--neut-600);
@@ -118,11 +111,14 @@ body {
 }
 
 .data-used {
+  font-size: 1rem;
+  font-weight: 400;
   position: relative;
   top: 8%;
   height: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .split > * {
@@ -155,9 +151,9 @@ body {
   justify-content: flex-end;
   margin-top: .17rem;
   border-radius: 1rem;
-  margin-left: .3rem;
+  margin-left: .2rem;
   height: 70%;
-  width: 13rem;
+  width: 75%;
   position: relative;
   z-index: 2;
 
@@ -169,7 +165,7 @@ body {
   margin-top: 1px;
   margin-right: 3px;
   border-radius: 10px;
-  width: .65rem;
+  width: .5rem;
   position: relative;
   z-index: 3;
 }
@@ -203,4 +199,81 @@ body {
   padding: .3rem;
   letter-spacing: 1px;
   color: hsl(219, 6%, 46%);
+}
+
+@media (min-width: 1401px){
+  body {
+    background-color: var(--neut-800);
+    background-image: url('./images/bg-desktop.png');
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .main-container {
+    flex-direction: row;
+    width: 65%;
+  }
+
+  .data-links {
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  .data-container {
+    top: 2.5%
+  }
+  
+  .data-used {
+    top: 20%;
+    align-self: flex-start;
+    left: 3rem;
+
+  }
+
+  .progress {
+    width: 85%;
+    top: 15%;
+  }
+
+  .split {
+    top: 20%;
+    width: 85%;
+  }
+  
+  .data-left {
+    top: -80%;
+    align-self: flex-end;
+    height: 60%;
+    width: 25%;
+    right: 4.5rem;
+  }
+  
+  .tri {
+    position: relative;
+    z-index: 3;
+    height: 0px;
+    width: 0px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid var(--neut-400);
+    right: 6.65rem;
+    top: -2rem;
+  }
+}
+
+@media (max-width: 1400px){
+  body {
+    background-image: url('./images/bg-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.attribution { 
+  font-size: .8rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
