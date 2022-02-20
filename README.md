@@ -8,15 +8,12 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 Create a data storge component that matches a set desktop and mobile design.
@@ -35,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code repo](https://github.com/Kmullen444/fylo-data-storage-component-HTML)
+- Live Site URL: [Github pages](https://kmullen444.github.io/fylo-data-storage-component-HTML/)
 
 
 ### Built with
